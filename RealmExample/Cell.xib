@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Lx-YE-WJV" customClass="Cell" customModule="RealmExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Lx-YE-WJV" id="X6F-Sc-Ey9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-xD-Tdk">
+                        <rect key="frame" x="16" y="8" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-Ej-qQ1">
+                        <rect key="frame" x="16" y="37" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JFv-xD-Tdk" firstAttribute="top" secondItem="X6F-Sc-Ey9" secondAttribute="topMargin" id="0NP-Ja-U6T"/>
+                    <constraint firstItem="dL7-Ej-qQ1" firstAttribute="top" secondItem="JFv-xD-Tdk" secondAttribute="bottom" constant="8" id="IFP-6o-QcG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JFv-xD-Tdk" secondAttribute="trailing" constant="8" id="QKO-nR-n8U"/>
+                    <constraint firstItem="dL7-Ej-qQ1" firstAttribute="leading" secondItem="X6F-Sc-Ey9" secondAttribute="leadingMargin" constant="8" id="TfR-i5-bRV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dL7-Ej-qQ1" secondAttribute="trailing" constant="8" id="XXc-nu-lOc"/>
+                    <constraint firstItem="JFv-xD-Tdk" firstAttribute="leading" secondItem="X6F-Sc-Ey9" secondAttribute="leadingMargin" constant="8" id="ece-gV-CbO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblAddress" destination="dL7-Ej-qQ1" id="Leo-fD-TVf"/>
+                <outlet property="lblName" destination="JFv-xD-Tdk" id="RI9-XU-fgd"/>
+            </connections>
+            <point key="canvasLocation" x="502" y="310"/>
+        </tableViewCell>
+    </objects>
+</document>
